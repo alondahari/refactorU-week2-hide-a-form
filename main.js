@@ -5,10 +5,23 @@ $(document).on('ready', function() {
       books: 'Favorite Books: ',
       libraries: 'Favorite JavaScript Libraries: '
     };
-  $('.edit-details').on('submit', function(e){
+  var $form = $('.edit-details'),
+      $showButton = $('.show-edit');
+
+  var toggleVision = function(){
+    $form.toggleClass('hidden');
+    $showButton.toggleClass('hide-edit');
+  };
+
+  $form.on('submit', function(){
     for (field in fields) {
       $('.user-' + field).text(fields[field] + $('.edit-' + field).val());
     }
+    toggleVision();
     return false;
+  });
+
+  $showButton.on('click', function(){
+    toggleVision();
   });
 });

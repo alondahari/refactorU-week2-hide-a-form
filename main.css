@@ -1,0 +1,11 @@
+.hidden{
+  display: none;
+}
+
+.show-edit:after{
+  content: "Show Form";
+}
+
+.hide-edit:after{
+  content: "Hide Form";
+}
