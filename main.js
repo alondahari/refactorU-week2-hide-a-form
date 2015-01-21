@@ -14,11 +14,10 @@ $(document).on('ready', function() {
     $showButton.text(buttonText);
   };
 
-  $form.on('submit', function(){
+  $form.on('change', function(){
     for (field in fields) {
       $('.user-' + field).text(fields[field] + $('.edit-' + field).val());
     }
-    toggleVision();
     return false;
   });
 
