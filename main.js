@@ -10,7 +10,8 @@ $(document).on('ready', function() {
 
   var toggleVision = function(){
     $form.toggleClass('hidden');
-    $showButton.toggleClass('hide-edit');
+    var buttonText = $form.hasClass('hidden') ? 'Show Form' : 'Hide Form';
+    $showButton.text(buttonText);
   };
 
   $form.on('submit', function(){
