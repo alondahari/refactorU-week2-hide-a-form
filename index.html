@@ -2,11 +2,36 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Untitled</title>
+  <title>Hide a Form</title>
   <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
-	
+
+  <form class="edit-details" action="">
+    <ul>
+      <li>
+        <input type="text" class="edit-name" placeholder="Name">
+      </li>
+      <li>
+        <input type="text" class="edit-bio" placeholder="Bio">
+      </li>
+      <li>
+        <input type="text" class="edit-books" placeholder="Favorite Books">
+      </li>
+      <li>
+        <input type="text" class="edit-libraries" placeholder="Favorite JavaScript Libraries">
+      </li>
+    </ul>
+    <input type="submit">
+  </form>
+
+  <ul class="user-details">
+    <li>Name: </li>
+    <li>Bio: </li>
+    <li>Favorite Books: </li>
+    <li>Favorite JavaScript Libraries: </li>
+  </ul>
+
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 	<script src="main.js"></script>
 
